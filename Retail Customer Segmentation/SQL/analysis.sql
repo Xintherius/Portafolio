@@ -81,7 +81,7 @@ FROM customer_segments
 GROUP BY CustomerSegmentation
 ORDER BY AvgMonetary DESC;
 
--- High value accounts detail extract
+-- High value accounts detail extract And Updated Recency requirements based on visualizations
 WITH customer_metrics AS (
     SELECT 
         CustomerID, 
@@ -100,10 +100,10 @@ customer_segments AS (
         ROUND((Monetary / NULLIF(Frequency, 0)), 2) AS AverageOrderValue,
         CASE 
             WHEN Monetary > 10000 THEN "VIP Client"
-            WHEN Frequency < 6 AND Recency <= 30 THEN "Low Frequency Promising"
-            WHEN Frequency < 6 AND Recency > 30 THEN "Low Frequency At Risk"
-            WHEN Frequency < 13 AND Recency <= 30 THEN "Medium Frequency Promising"
-            WHEN Frequency < 13 AND Recency > 30 THEN "Medium Frequency At Risk"
+            WHEN Frequency < 6 AND Recency <= 70 THEN "Low Frequency Promising"
+            WHEN Frequency < 6 AND Recency > 70 THEN "Low Frequency At Risk"
+            WHEN Frequency < 13 AND Recency <= 70 THEN "Medium Frequency Promising"
+            WHEN Frequency < 13 AND Recency > 70 THEN "Medium Frequency At Risk"
             WHEN Frequency < 51 THEN "High Frequency"
             ELSE "Very High Frequency"
         END AS CustomerSegmentation
