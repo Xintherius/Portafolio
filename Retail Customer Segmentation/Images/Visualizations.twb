@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_online_retail (retail)' inline='true' name='federated.1kfip9705zfkog18drzo41645r86' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.1wlw4v61ikpgey1gbfm3u190y7fo'>
+            <connection class='mysql' dbname='retail' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.1wlw4v61ikpgey1gbfm3u190y7fo' name='cleaned_online_retail' table='[cleaned_online_retail]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>InvoiceNo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[InvoiceNo]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>InvoiceNo</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockCode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[StockCode]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>StockCode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvoiceDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[InvoiceDate]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>InvoiceDate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UnitPrice]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>UnitPrice</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CustomerID]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>CustomerID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cancelled</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Cancelled]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>Cancelled</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discounted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Discounted]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>Discounted</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[totalPrice]</local-name>
+            <parent-name>[cleaned_online_retail]</parent-name>
+            <remote-alias>totalPrice</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Max Date' datatype='datetime' name='[Calculation_2409620238061568]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([InvoiceDate])' />
+      </column>
+      <column caption='Recency' datatype='integer' name='[Calculation_2409620238254081]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, {FIXED [CustomerID] : MAX([InvoiceDate])}, {MAX([InvoiceDate])})' />
+      </column>
+      <column caption='Monetary' datatype='real' name='[Calculation_2409620239388674]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [CustomerID] : SUM([totalPrice])}' />
+      </column>
+      <column caption='Frequency' datatype='integer' name='[Calculation_2409620239593475]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [CustomerID]:COUNTD(InvoiceNo)}' />
+      </column>
+      <column caption='Customer Segmentation' datatype='string' name='[Calculation_2409620240646148]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_2409620239593475] &lt; 6 AND [Calculation_2409620238254081] &lt;= 30 THEN &quot;Low Frequency Promising&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 6 AND [Calculation_2409620238254081] &gt; 30 THEN &quot;Low Frequency At Risk&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 13 AND [Calculation_2409620238254081] &lt;= 30 THEN &quot;Medium Frequency Promising&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 13 AND [Calculation_2409620238254081] &gt; 30 THEN &quot;Medium Frequency At Risk&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 51 THEN &quot;High Frequency&quot;&#13;&#10;ELSE &quot;Very High Frequency&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer ID' datatype='string' name='[CustomerID]' role='dimension' type='nominal' />
+      <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+      <column caption='Invoice No' datatype='string' name='[InvoiceNo]' role='dimension' type='nominal' />
+      <column caption='Stock Code' datatype='string' name='[StockCode]' role='dimension' type='nominal' />
+      <column caption='Unit Price' datatype='real' name='[UnitPrice]' role='measure' type='quantitative' />
+      <column caption='cleaned_online_retail' datatype='table' name='[__tableau_internal_object_id__].[cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C]' role='measure' type='quantitative' />
+      <column caption='Total Price' datatype='real' name='[totalPrice]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_2409620240646148]' derivation='None' name='[none:Calculation_2409620240646148:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_2409620240646148:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Very High Frequency&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Low Frequency Promising&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Medium Frequency Promising&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low Frequency At Risk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Medium Frequency At Risk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;High Frequency&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_online_retail' id='cleaned_online_retail_B4AB16C9C8A14D2C8B989FE9BB4EB30C'>
+            <properties context=''>
+              <relation connection='mysql.1wlw4v61ikpgey1gbfm3u190y7fo' name='cleaned_online_retail' table='[cleaned_online_retail]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='127.0.0.1' inline='true' name='federated.135ieti0lj2m6r1ea17nu1vydibq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.1lriw1f18yavdj1emsou80ruhxt6'>
+            <connection class='mysql' dbname='' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Kpis by Customer Segmentation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_online_retail (retail)' name='federated.1kfip9705zfkog18drzo41645r86' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kfip9705zfkog18drzo41645r86'>
+            <column caption='Recency' datatype='integer' name='[Calculation_2409620238254081]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, {FIXED [CustomerID] : MAX([InvoiceDate])}, {MAX([InvoiceDate])})' />
+            </column>
+            <column caption='Monetary' datatype='real' name='[Calculation_2409620239388674]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [CustomerID] : SUM([totalPrice])}' />
+            </column>
+            <column caption='Frequency' datatype='integer' name='[Calculation_2409620239593475]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [CustomerID]:COUNTD(InvoiceNo)}' />
+            </column>
+            <column caption='Customer Segmentation' datatype='string' name='[Calculation_2409620240646148]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_2409620239593475] &lt; 6 AND [Calculation_2409620238254081] &lt;= 30 THEN &quot;Low Frequency Promising&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 6 AND [Calculation_2409620238254081] &gt; 30 THEN &quot;Low Frequency At Risk&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 13 AND [Calculation_2409620238254081] &lt;= 30 THEN &quot;Medium Frequency Promising&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 13 AND [Calculation_2409620238254081] &gt; 30 THEN &quot;Medium Frequency At Risk&quot;&#13;&#10;ELSEIF [Calculation_2409620239593475] &lt; 51 THEN &quot;High Frequency&quot;&#13;&#10;ELSE &quot;Very High Frequency&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Customer ID' datatype='string' name='[CustomerID]' role='dimension' type='nominal' />
+            <column caption='Invoice Date' datatype='datetime' name='[InvoiceDate]' role='dimension' type='ordinal' />
+            <column caption='Invoice No' datatype='string' name='[InvoiceNo]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2409620238254081]' derivation='Avg' name='[avg:Calculation_2409620238254081:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2409620239388674]' derivation='Avg' name='[avg:Calculation_2409620239388674:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2409620239593475]' derivation='Avg' name='[avg:Calculation_2409620239593475:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CustomerID]' derivation='CountD' name='[ctd:CustomerID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2409620240646148]' derivation='None' name='[none:Calculation_2409620240646148:nk]' pivot='key' type='nominal' />
+            <column caption='Total Price' datatype='real' name='[totalPrice]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Very High Frequency&quot;</bucket>
+              <bucket>&quot;High Frequency&quot;</bucket>
+              <bucket>&quot;Medium Frequency Promising&quot;</bucket>
+              <bucket>&quot;Medium Frequency At Risk&quot;</bucket>
+              <bucket>&quot;Low Frequency Promising&quot;</bucket>
+              <bucket>&quot;Low Frequency At Risk&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kfip9705zfkog18drzo41645r86].[ctd:CustomerID:qk]' scope='cols' value='Customers' />
+            <format attr='title' class='0' field='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620238254081:qk]' scope='cols' value='Avg. Recency (Days)' />
+            <format attr='title' class='0' field='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239593475:qk]' scope='cols' value='Avg. Orders' />
+            <format attr='title' class='0' field='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239388674:qk]' scope='cols' value='Avg. Spend' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' value='292' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' value='bold' />
+            <format attr='color' field='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' value='#000000' />
+            <format attr='text-format' field='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620238254081:qk]' value='n#,##0' />
+            <format attr='text-format' field='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239388674:qk]' value='c&quot;$&quot;#,##0,K;(&quot;$&quot;#,##0,K)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620238254081:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239593475:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239388674:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1kfip9705zfkog18drzo41645r86].[ctd:CustomerID:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]</rows>
+        <cols>([federated.1kfip9705zfkog18drzo41645r86].[ctd:CustomerID:qk] + ([federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620238254081:qk] + ([federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239593475:qk] + [federated.1kfip9705zfkog18drzo41645r86].[avg:Calculation_2409620239388674:qk])))</cols>
+      </table>
+      <simple-id uuid='{F08B36DA-5B60-4CDD-AA0E-7DAE6E32872B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='Kpis by Customer Segmentation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kfip9705zfkog18drzo41645r86].[none:Calculation_2409620240646148:nk]</field>
+            <field>[federated.1kfip9705zfkog18drzo41645r86].[none:CustomerID:nk]</field>
+            <field>[federated.1kfip9705zfkog18drzo41645r86].[usr:Calculation_2409620240646148:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0DBE0DE0-A97D-4FFF-8B61-B3E1EBF8EA23}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Kpis by Customer Segmentation' width='192'>
+      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
+      AMRoCkCM9r9+zpIMKX1RsQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
